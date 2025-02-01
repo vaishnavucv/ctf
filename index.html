@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Challenge</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .terminal {
+            background-color: #1d1d1d;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+            max-width: 800px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .story {
+            white-space: pre-wrap;
+            overflow: hidden;
+            border-right: 0.15em solid green;
+            animation: typing 8s steps(100, end), blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: green; }
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .button {
+            background-color: #333;
+            color: red;
+            border: 2px solid red;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .button:active {
+            background-color: green;
+            color: black;
+            transform: scale(0.95);
+        }
+
+        .button:hover {
+            background-color: red;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="story">
+The encrypted transmission crackled through the secure channel, barely holding its signal. A distorted voice whispered in urgency:
+
+"Temporal synchronization required… The timeline is fractured. Sector21 intercepted the anomaly, and I… I am trapped. You must realign the sequence before it's too late!"
+
+Static. Then a faint signal emerged.
+
+"######… They’ve locked ##### in Cell No:###. The ### is hidden beyond ####—find it, synchronize the ##### with the ######, and set me free."
+        </div>
+    </div>
+    <div class="buttons">
+        <a href="http://ctf.sector21.org:3355/" class="button" target="_blank">CTF Page</a>
+        <a href="https://discord.gg/sector21" class="button" target="_blank">Discord Invite</a>
+    </div>
+</body>
+</html>
